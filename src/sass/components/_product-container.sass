@@ -1,0 +1,39 @@
+.products-container
+    grid-area: 2 / 2 / 5 / 6
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    padding: 20px
+    gap: 12px
+
+    .product-card
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-direction: column
+        padding: 12px
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+
+        img
+            max-height: 150px
+
+
+        .product-name
+            font-weight: 700
+            text-align: center
+
+        .price
+            text-align: center
+
+        button
+            background-color: rgba(0, 0, 0, 0)
+            border: none
+            cursor: pointer
+            padding: 4px 12px
+            border-radius: 4px
+
+            &:hover
+                background-color: $color-principal
+                font-weight: 700
+                color: white

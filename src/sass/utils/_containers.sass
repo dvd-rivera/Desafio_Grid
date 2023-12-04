@@ -1,0 +1,30 @@
+.column-sm-50
+    width: 100%
+    +flex-center
+    +sm
+        width: 49%
+
+
+.container
+    width: 95%
+    +flex-between
+    +md
+        max-width: 600px
+
+
+.stretch
+    align-items: stretch
+
+
+.wi-100
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+.main-grid
+    display: grid
+    grid-template-columns: 20% 20% 20% 20% 20%
+    grid-template-rows: auto 1fr auto
+    min-height: 100vh

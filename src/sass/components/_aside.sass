@@ -1,0 +1,44 @@
+aside
+    background-color: rgba($color-principal, 0.3)
+    grid-area: 2 / 1 / 5 / 2
+    padding: 40px 20px
+    +flex-start
+    flex-direction: column
+
+    h4
+        margin: 0
+        width: 100%
+        margin-bottom: 20px
+
+    .submenu
+        overflow: hidden
+        height: 0
+        opacity: 0
+        transition: opacity 0.5s ease-in-out
+        padding-left: 20px
+        width: 100%
+
+        &:hover
+            height: auto
+            transition: opacity 0.5s ease-in-out
+            opacity: 1
+            
+
+        p
+            font-weight: 700
+
+    p
+        margin: 0
+        font-weight: 900
+        padding: 8px 4px
+        width: 100%
+        
+        &:hover
+            cursor: pointer
+            background-color: rgba(0, 0, 0, 0.1)
+
+            &+.submenu
+                height: auto
+                transition: opacity 0.5s ease-in-out
+                opacity: 1
+            
